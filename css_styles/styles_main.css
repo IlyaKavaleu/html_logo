@@ -1,0 +1,114 @@
+  body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo {
+            text-align: left;
+        }
+
+        .block {
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, filter 0.3s ease, background-color 0.3s ease;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+/* all block */
+        .block {
+            transition: transform 0.5s ease;
+        }
+
+        .block:hover {
+            transform: scale(1.3);
+        }
+
+        .pink {
+            background-color: #ff99cc;
+        }
+
+        .pale-yellow {
+            background-color: #ffffcc;
+        }
+
+        .pale-green {
+            background-color: #ccffcc;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Кнопка для открытия бокового меню */
+        .menu-btn {
+            font-size: 20px;
+            cursor: pointer;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 2;
+        }
+.block h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #000; /* Черный цвет текста */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+
+  .block p {
+    font-size: 16px;
+    color: #000; /* Черный цвет текста */
+    transition: color 0.3s ease;
+  }
+
+  .block:hover {
+    transform: scale(1.05); /* Увеличение размера при наведении */
+    filter: brightness(1.2); /* Увеличение яркости при наведении */
+    background-color: #ff4d4d; /* Изменение цвета фона при наведении */
+  }
+
+  .block:hover h2,
+  .block:hover p {
+    color: #fff; /* Изменение цвета текста при наведении */
+  }
+
+  .block::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.2) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .block:hover::before {
+    opacity: 1; /* Отображение свечения при наведении */
+  }

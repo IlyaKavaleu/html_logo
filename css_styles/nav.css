@@ -1,0 +1,35 @@
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    margin-right: 10px;
+    transition: filter 0.3s ease;
+  }
+
+  .logo .margin-left {
+    display: flex;
+    margin-left: 10px; /* Отступ слева для группы кнопок */
+  }
+
+  .beautiful-button {
+    font-size: 16px; /* Начальный размер шрифта */
+    margin-right: 10px; /* Отступ между кнопками */
+    cursor: pointer;
+    transition: font-size 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+  }
+
+  .beautiful-button:hover {
+    font-size: 40px; /* Размер шрифта при наведении */
+    color: blue; /* Цвет текста при наведении */
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.8), 0 0 30px rgba(0, 255, 255, 0.8); /* Эффект тени */
+  }
+
+  .beautiful-button:last-child {
+    margin-right: 0; /* Убираем отступ справа у последней кнопки */
+  }
+
+  .logo:hover img {
+    filter: brightness(1.2);
+  }
